@@ -13,9 +13,6 @@ use App\Http\Controllers\TrainController as TrainController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
 
-Route::get('/trains', [TrainController::class,'index'])->name('trains');
+Route::get('/', [TrainController::class,'index'])->name('home');
 
